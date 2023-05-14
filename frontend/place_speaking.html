@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="scripts.js"></script>
+    <script src="scripts_speaking.js"></script>
+    <title>Speaking place</title>
+</head>
+<body>
+    <div class="theBiggestContainer">
+        <div class="containerOfButtons">
+            <div>
+                <h3>Бронирование:</h3>
+            </div>
+            <div>
+                <button id="placeParking" onclick="turnOnPlaceParking()">
+                    <div>Парковочное место</div>
+                </button><br><br>
+            </div>
+            <div>
+                <button id="placeWorking" onclick="turnOnPlaceWorking()">
+                    <div>Рабочее место</div>
+                </button><br><br>
+            </div>
+            <div>
+                <button id="placeSpeaking" onclick="turnOnPlaceSpeaking()">
+                    <div>Комната совещаний</div>
+                </button><br><br><br><br>
+            </div>
+            
+            <div>
+                <button id="settings" onclick="showSettings()">
+                    <div>Настройки</div>
+                </button>
+            </div>
+        </div>
+        <div class="speakingroom-map">
+            <div class="room" id="room1" onclick="room_click(1)" style="top: 10px; left: 10px;">Комната 1 макс:15</div>
+            <div class="room" id="room2" onclick="room_click(2)" style="top: 10px; left: 230px;">Комната 2 макс:10</div>
+            <div class="room" id="room3" onclick="room_click(3)" style="top: 200px; left: 110px;">Комната 3 макс:20</div>
+            <div class="room" id="room4" onclick="room_click(4)" style="top: 110px; left: 220px;">Комната 4 макс:30</div>
+        </div>
+        <div><iframe id="chatWindow" height="600"style="display: none;" src="https://viarune.rocket.chat/home" class="rocket_chat"></iframe></div>
+    </div>
+    <div class="containerOfData">
+        <div class="period-container">
+            <div class="period-container">
+                <label><h3>Выберите период</h3></label>
+                <div class="time-container">
+                    <label for="from"><h5>Дата: </h5></label>
+                    <div class="input-time-container">
+                        <input type="date" id="start_date" name="start_period" value="2023-05-13" min="2023-01-01"max="2023-12-30">
+                        <button onclick="takeBron()">Забронировать</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <input type="checkbox"><label>10:00-11:00</label>
+        <input type="checkbox"><label>17:00-18:00</label><br>
+
+        <input type="checkbox"><label>11:00-12:00</label>
+        <input type="checkbox"><label>18:00-19:00</label><br>
+
+        <input type="checkbox"><label>12:00-13:00</label>
+        <input type="checkbox"><label>20:00-21:00</label><br>
+
+        <input type="checkbox"><label>14:00-15:00</label>
+        <input type="checkbox"><label>21:00-22:00</label><br>
+
+        <input type="checkbox"><label>15:00-16:00</label>
+        <input type="checkbox"><label>22:00-23:00</label><br>
+
+        <input type="checkbox"><label>16:00-17:00</label>
+        <input type="checkbox"><label>23:00-00:00</label><br>
+
+    </div>
+    
+</body>
+</html>
