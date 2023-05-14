@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.484645,
+      "y": 84.947649
+    },
+    {
+      "id": 2,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475178,
+      "y": 84.987065
+    },
+    {
+      "id": 3,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475183,
+      "y": 84.985804
+    },
+    {
+      "id": 15,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475107,
+      "y": 84.986655
+    },
+    {
+      "id": 4,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475304,
+      "y": 84.986062
+    },
+    {
+      "id": 6,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475307,
+      "y": 84.987103
+    },
+    {
+      "id": 14,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.47576282069609,
+      "y": 84.98658894776152
+    },
+    {
+      "id": 8,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475317,
+      "y": 84.987103
+    },
+    {
+      "id": 5,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475317,
+      "y": 84.987123
+    },
+    {
+      "id": 13,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.47587836631501,
+      "y": 84.98747407675198
+    },
+    {
+      "id": 7,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475197,
+      "y": 84.987313
+    },
+    {
+      "id": 12,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.47588429172188,
+      "y": 84.98634218452781
+    },
+    {
+      "id": 9,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475107,
+      "y": 84.987003
+    },
+    {
+      "id": 11,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.475905030638685,
+      "y": 84.98769401789508
+    },
+    {
+      "id": 10,
+      "occupited": true,
+      "totalPlaces": 0,
+      "freePlaces": 0,
+      "x": 56.474907,
+      "y": 84.987903
+    }
+  ]

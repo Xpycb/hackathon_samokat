@@ -1,0 +1,50 @@
+[ 
+  { 
+    "id": 10, 
+    "occupited": true, 
+    "totalPlaces": 0, 
+    "freePlaces": 0, 
+    "x": 55.727294, 
+    "y": 37.4961 
+  }, 
+  { 
+    "id": 9, 
+    "occupited": true, 
+    "totalPlaces": 0, 
+    "freePlaces": 0, 
+    "x": 55.614681, 
+    "y": 37.605592 
+  }, 
+  { 
+    "id": 12, 
+    "occupited": true, 
+    "totalPlaces": 0, 
+    "freePlaces": 0, 
+    "x": 56.60875106927364, 
+    "y": 84.84697495476397 
+  }, 
+  { 
+    "id": 11, 
+    "occupited": true, 
+    "totalPlaces": 0, 
+    "freePlaces": 0, 
+    "x": 56.49228, 
+    "y": 84.943741 
+  }, 
+  { 
+    "id": 14, 
+    "occupited": true, 
+    "totalPlaces": 0, 
+    "freePlaces": 0, 
+    "x": 56.59492021671916, 
+    "y": 84.91579907342195 
+  }, 
+  { 
+    "id": 15, 
+    "occupited": true, 
+    "totalPlaces": 0, 
+    "freePlaces": 0, 
+    "x": 56.619930552879254, 
+    "y": 84.99512025995521 
+  } 
+]

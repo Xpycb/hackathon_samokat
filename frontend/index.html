@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parking place</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=69f3e9cc-96db-4c09-b3c3-e1da216ad963&lang=ru_RU" type="text/javascript">
+        </script>
+        <script src="scripts.js"></script>
+        <script src="scripts_parking.js"></script>
+    </head>
+    <body onload="start()">
+        <div class="theBiggestContainer">
+            <div class="containerOfButtons">
+                <div>
+                    <h3>Бронирование:</h3>
+                </div>
+                <div>
+                    <button id="placeParking" onclick="turnOnPlaceParking()">
+                        <div>Парковочное место</div>
+                    </button><br><br>
+                </div>
+                <div>
+                    <button id="placeWorking" onclick="turnOnPlaceWorking()">
+                        <div>Рабочее место</div>
+                    </button><br><br>
+                </div>
+                <div>
+                    <button id="placeSpeaking" onclick="turnOnPlaceSpeaking()">
+                        <div>Комната совещаний</div>
+                    </button><br><br><br><br>
+                </div>
+                
+                <div>
+                    <button id="settings" onclick="showSettings()">
+                        <div>Настройки</div>
+                    </button>
+                </div>
+            </div>
+            <div id="map" style="width: 800px; height: 400px"></div>
+        </div>
+                
+    </body>
+    
+</html>
