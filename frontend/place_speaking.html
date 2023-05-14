@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,13 +38,16 @@
             </div>
         </div>
         <div class="speakingroom-map">
-            <div class="room" id="room1" onclick="room_click(1)" style="top: 10px; left: 10px;">Комната 1 макс:15</div>
-            <div class="room" id="room2" onclick="room_click(2)" style="top: 10px; left: 230px;">Комната 2 макс:10</div>
-            <div class="room" id="room3" onclick="room_click(3)" style="top: 200px; left: 110px;">Комната 3 макс:20</div>
-            <div class="room" id="room4" onclick="room_click(4)" style="top: 110px; left: 220px;">Комната 4 макс:30</div>
+            <div class="openChatBtn" id="room1" onclick="room_click(1)" style="top: 10px; left: 10px;">Комната 1 макс:15</div>
+            <div class="openChatBtn" id="room2" onclick="room_click(2)" style="top: 10px; left: 230px;">Комната 2 макс:10</div>
+            <div class="openChatBtn" id="room3" onclick="room_click(3)" style="top: 200px; left: 110px;">Комната 3 макс:20</div>
+            <div class="openChatBtn" id="room4" onclick="room_click(4)" style="top: 110px; left: 220px;">Комната 4 макс:30</div>
         </div>
-        <div><iframe id="chatWindow" height="600"style="display: none;" src="https://viarune.rocket.chat/home" class="rocket_chat"></iframe></div>
+        <div id="chatWindow" style="display: none;"><iframe height="600" src="https://viarune.rocket.chat/home" class="rocket_chat"></iframe></div>
     </div>
+    <!-- <button class="openChatBtn">Открыть чат</button> -->
+<div id="checkboxes"></div>
+<button onclick="takeBron()">Забронировать</button>
     <div class="containerOfData">
         <div class="period-container">
             <div class="period-container">

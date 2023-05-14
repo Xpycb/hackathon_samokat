@@ -2,8 +2,8 @@
 document.getElementById(start_date).value = document.write(Date());
 
 async function get_request(url) {
-    //let response = await fetch(url);
-    let response = await fetch(data.json); console.log(response);
+    let response = await fetch(url);
+    //let response = await fetch(data.json); console.log(response);
     if (!response.ok) {
       alert("Error"); 
     }

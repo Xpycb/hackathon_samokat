@@ -35,7 +35,7 @@
     align-items: center;/*выравнивание по вертикали */
     justify-content: center;/*выравнивание по горизонтали */
 }
-.room{
+.openChatBtn{
     position: absolute;/*не зависит от родительских элементов */
     width: 75px;
     height: 75px;

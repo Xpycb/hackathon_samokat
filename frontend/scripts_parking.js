@@ -1,5 +1,7 @@
-var url_to_getpointsParking = "https://localhost:7282/api/ParkingZones"
-var url_Bron = "https://localhost:7282/api/ParkingZones/5"
+var url_to_getpointsParking = "http://localhost:5134/api/ParkingZones"
+
+var url_Bron = "http://localhost:5134/api/ParkingZones/"
+http://localhost:5134/api/ParkingZones/
 var myMarc
 var myMap
 let pointsParking
@@ -36,8 +38,8 @@ async function init(){
             [pointsParking[i].x, pointsParking[i].y], {
             balloonContent: add_button("забронировать", pointsParking[i].id),
         }, {
-            iconColor: t==1 ? 'red' : 'blue',
-            interactive: t==1 ? false : true
+            iconColor: pointsParking[i].occupited == false ? 'red' : 'blue',
+            interactive: pointsParking[i].occupited == false ? false : true
         });
         myMap.geoObjects.add(myMarc);
     }
@@ -46,11 +48,11 @@ async function init(){
     
 
 async function get_request(url) {
-    let response = await fetch("/data_parking.json");
-    //let response = await fetch(url);
+    //let response = await fetch("/data_parking.json");
+    let response = await fetch(url);
     console.log(response);
     if (!response.ok) {
-      alert("Error");
+        alert("Ошибка HTTP: " + response.status);
     }
     return await response.text();
 }
@@ -63,12 +65,34 @@ function add_button(text, Id){
     console.log(Id);
     return '<button onclick="addBron('+Id+', this)">забронировать</button>'
 }
-function addBron(Id, obj){
+async function addBron(Id, obj){
     console.log(obj);
-    alert("Забронировано");
-    //obj.id.style
-
-    const temp = get_request(url_Bron);
+    alert("Забронировано"+Id);
+    let user = {
+        "id": Id,
+        "occupited": false,
+        "totalPlace": 0,
+        "freePlace": 345,
+        "x": pointsParking[Id-1].x,
+        "y": pointsParking[Id-1].y
+      };
+      
+      let response = await fetch(url_Bron+user.id, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      });
+      
+      if (!response.ok) {
+        throw new Error(response.status);
+      }
+      
+      let result = await response.json();
+      console.log(result);
+    alert(result.message);
+    window.location.reload();
 }
   
 
